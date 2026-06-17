@@ -1,0 +1,17 @@
+[build]
+  functions = "netlify/functions"
+
+[[redirects]]
+  from = "/mock/token"
+  to = "/.netlify/functions/token"
+  status = 200
+
+[[redirects]]
+  from = "/mock/answers-v2"
+  to = "/.netlify/functions/answers-v2"
+  status = 200
+
+[[redirects]]
+  from = "/mock/answers-v2/:id"
+  to = "/.netlify/functions/answers-v2-poll"
+  status = 200
